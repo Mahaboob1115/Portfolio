@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mahaboob Basha Pamidi - Computer Science Engineering Graduate & Full Stack Developer. Portfolio specializing in ReactJS, Spring Boot, Python, and Machine Learning.">
+    <meta name="keywords" content="Mahaboob Basha Pamidi, Portfolio, Full Stack Developer, ReactJS, Spring Boot, Python, Java, Blockchain, Machine Learning">
+    <meta name="author" content="Mahaboob Basha Pamidi">
+    <title>Mahaboob Basha Pamidi | Full Stack Developer</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    <!-- Interactive Background Canvas -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Header / Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo" id="logo">
+                <span class="logo-accent">&lt;</span>Mahaboob<span class="logo-accent">.Dev /&gt;</span>
+            </a>
+            <nav class="nav-links" id="nav-links">
+                <a href="#home" class="nav-item active" id="nav-home">Home</a>
+                <a href="#about" class="nav-item" id="nav-about">About & Skills</a>
+                <a href="#experience" class="nav-item" id="nav-experience">Education & Awards</a>
+                <a href="#projects" class="nav-item" id="nav-projects">Projects</a>
+                <a href="#resume" class="nav-item" id="nav-resume">Resume</a>
+                <a href="#contact" class="nav-item" id="nav-contact">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light theme">
+                    <i class="fas fa-moon" id="theme-icon"></i>
+                </button>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <span class="greeting-badge" id="hero-badge">Welcome to my Portfolio</span>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="highlight-text">Mahaboob Basha Pamidi</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        I am a <span class="typing-text" id="typing-text"></span><span class="typing-cursor">|</span>
+                    </h2>
+                    <p class="hero-description">
+                        Computer Science Engineering graduate specializing in building secure, scalable, and high-performance full-stack applications. Passionate about machine learning, blockchain security, and clean system architectures.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary" id="btn-hero-contact">
+                            <span>Get In Touch</span> <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#projects" class="btn btn-secondary" id="btn-hero-projects">
+                            <span>View My Projects</span>
+                        </a>
+                        <a href="https://drive.google.com/uc?export=download&id=1rBr1MbKknOD1KH_mG2qdbLyM45gTfDZG" target="_blank" class="btn btn-resume" id="btn-download-resume">
+                            <i class="fas fa-file-download"></i> <span>Download Resume</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="avatar-wrapper">
+                        <div class="avatar-glow"></div>
+                        <!-- Profile Image Container with Cyberpunk Glow -->
+                        <div class="profile-image-container">
+                            <div class="profile-photo placeholder" aria-label="Profile picture placeholder">
+                                <span>Mahaboob</span>
+                            </div>
+                            <div class="pulse-ring ring-1"></div>
+                            <div class="pulse-ring ring-2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <a href="#about" aria-label="Scroll to About Me section">
+                    <div class="mouse-icon">
+                        <div class="wheel"></div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- About & Skills Section -->
+        <section id="about" class="about-section scroll-reveal">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-subtitle">Profile Summary</span>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-underline"></div>
+                </div>
+                <div class="about-grid">
+                    <div class="about-text-card glass-card">
+                        <h3>Professional Summary</h3>
+                        <p>
+                            I am a motivated Computer Science Engineering graduate with hands-on experience in full-stack development. I have successfully built applications using <strong>ReactJS</strong> for frontend interfaces, and <strong>Spring Boot</strong>, <strong>Python</strong>, or <strong>Java</strong> for robust backend services.
+                        </p>
+                        <p>
+                            My expertise covers relational and SQL database management, secure digital verification architectures using blockchain, and deploying machine learning models. I am committed to delivering high-quality, secure software solutions and pursuing continuous professional growth.
+                        </p>
+                        <div class="personal-info">
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Bangalore, India</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>shaikmahaboob1115@gmail.com</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-phone-alt"></i>
+                                <span>+91 9390277655</span>
+                            </div>
+                        </div>
+
+                        <h3 style="margin-top: 30px; margin-bottom: 15px;">Languages</h3>
+                        <div class="languages-grid">
+                            <div class="lang-badge">
+                                <i class="fas fa-globe"></i> English <span class="lang-level">(Professional)</span>
+                            </div>
+                            <div class="lang-badge">
+                                <i class="fas fa-comments"></i> Telugu <span class="lang-level">(Native)</span>
+                            </div>
+                            <div class="lang-badge">
+                                <i class="fas fa-comments"></i> Hindi <span class="lang-level">(Professional)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-card glass-card">
+                        <h3>Technical Skillset</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Web Development (ReactJS, Spring Boot)</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Programming (Python, Java)</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Databases & SQL Management</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Specializations (ML, Blockchain, Security)</span>
+                                    <span>75%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 75%;"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h4 style="margin-bottom: 15px; font-weight: 600;">Tools & Technologies</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">ReactJS</span>
+                            <span class="tech-tag">Spring Boot</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">Git & GitHub</span>
+                            <span class="tech-tag">Heroku</span>
+                            <span class="tech-tag">FFmpeg</span>
+                            <span class="tech-tag">NLP / NLTK</span>
+                            <span class="tech-tag">Blockchain</span>
+                            <span class="tech-tag">Cybersecurity</span>
+                            <span class="tech-tag">AES Encryption</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Achievements Section -->
+        <section id="experience" class="experience-section scroll-reveal">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-subtitle">Milestones</span>
+                    <h2 class="section-title">Education & Achievements</h2>
+                    <div class="section-underline"></div>
+                </div>
+                <div class="timeline">
+                    <!-- Timeline Item 1: B.Tech -->
+                    <div class="timeline-item left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">August 2021 - June 2025</span>
+                            <h3 class="timeline-title">B.Tech in Computer Science Engineering</h3>
+                            <h4 class="timeline-company">Kalasalingam University, Tamil Nadu</h4>
+                            <p class="timeline-desc">
+                                Completed coursework in algorithms, web development, data structures, and database management systems. <strong>CGPA: 7.71</strong>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Timeline Item 2: Achievements -->
+                    <div class="timeline-item right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">Hackathons & Conferences</span>
+                            <h3 class="timeline-title">Achievements & Awards</h3>
+                            <h4 class="timeline-company">Key Recognitions</h4>
+                            <ul class="timeline-list">
+                                <li><i class="fas fa-award"></i> <strong>Innovation and Excellence Award</strong> - IBM Hackathon</li>
+                                <li><i class="fas fa-medal"></i> <strong>Paper Presentation Award</strong> - National Conference on Advanced Technologies</li>
+                                <li><i class="fas fa-newspaper"></i> <strong>IEEE Paper Presentation</strong> - iTech SECOM Conference 2023 (Presented: "Simultaneous Lightwave Information And Power Transfer-based Design Of Green IoT Communication System")</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Timeline Item 3: 12th Standard -->
+                    <div class="timeline-item left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">May 2019 - May 2021</span>
+                            <h3 class="timeline-title">Senior Secondary Education (12th Standard)</h3>
+                            <h4 class="timeline-company">Sri Chaitanya Jr College, Vijayawada</h4>
+                            <p class="timeline-desc">
+                                Specialized in Mathematics, Physics, and Chemistry. <strong>Percentage: 86.9%</strong>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Timeline Item 4: Certifications -->
+                    <div class="timeline-item right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">Professional Growth</span>
+                            <h3 class="timeline-title">Certifications</h3>
+                            <h4 class="timeline-company">Credentials</h4>
+                            <ul class="timeline-list">
+                                <li><i class="fas fa-certificate"></i> <strong>Microsoft Certified</strong> - Translate speech with the speech service (Jan 2021)</li>
+                                <li><i class="fas fa-file-contract"></i> <strong>IEEE Presentation Certificate</strong> - iTech SECOM IEEE Conference (Dec 2023)</li>
+                                <li><i class="fas fa-file-contract"></i> <strong>Web Development Certificate</strong> - Internshala (2022)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section scroll-reveal">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-subtitle">Portfolio Projects</span>
+                    <h2 class="section-title">Professional Projects</h2>
+                    <div class="section-underline"></div>
+                </div>
+                <!-- Filter Tabs -->
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="machine-learning">Machine Learning</button>
+                    <button class="filter-btn" data-filter="blockchain">Blockchain</button>
+                    <button class="filter-btn" data-filter="cybersecurity">Cybersecurity</button>
+                </div>
+                <!-- Project Grid -->
+                <div class="projects-grid">
+                    <!-- Project 1: NLP Email Spam Detection -->
+                    <div class="project-card glass-card" data-category="machine-learning">
+                        <div class="project-img-wrapper">
+                            <svg class="project-svg" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="pGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#4f46e5" />
+                                        <stop offset="100%" stop-color="#06b6d4" />
+                                    </linearGradient>
+                                </defs>
+                                <rect width="400" height="250" fill="url(#pGrad1)" />
+                                <rect x="20" y="20" width="360" height="210" rx="8" fill="#0f172a" opacity="0.9" />
+                                <!-- UI elements illustrating Email classification -->
+                                <rect x="35" y="35" width="330" height="35" rx="6" fill="#1e293b" />
+                                <text x="50" y="57" fill="#f3f4f6" font-family="'Outfit', sans-serif" font-weight="bold" font-size="12">Subject: Claim Your Free Lottery Ticket Now!</text>
+                                <rect x="280" y="42" width="70" height="20" rx="10" fill="#ef4444" />
+                                <text x="298" y="56" fill="#ffffff" font-family="'Outfit', sans-serif" font-weight="bold" font-size="10">SPAM</text>
+                                
+                                <rect x="35" y="80" width="330" height="35" rx="6" fill="#1e293b" />
+                                <text x="50" y="102" fill="#f3f4f6" font-family="'Outfit', sans-serif" font-weight="bold" font-size="12">Subject: Detailed Project Status Update</text>
+                                <rect x="280" y="87" width="70" height="20" rx="10" fill="#10b981" />
+                                <text x="301" y="101" fill="#ffffff" font-family="'Outfit', sans-serif" font-weight="bold" font-size="10">HAM</text>
+                                
+                                <!-- Diagram details -->
+                                <circle cx="100" cy="180" r="30" fill="none" stroke="#8b5cf6" stroke-width="2" />
+                                <text x="80" y="184" fill="#8b5cf6" font-family="'Outfit', sans-serif" font-size="11">Tokenizer</text>
+                                <line x1="130" y1="180" x2="160" y2="180" stroke="#06b6d4" stroke-width="2" />
+                                <circle cx="200" cy="180" r="30" fill="none" stroke="#06b6d4" stroke-width="2" />
+                                <text x="180" y="184" fill="#06b6d4" font-family="'Outfit', sans-serif" font-size="11">NLP Model</text>
+                                <line x1="230" y1="180" x2="260" y2="180" stroke="#ec4899" stroke-width="2" />
+                                <circle cx="300" cy="180" r="30" fill="none" stroke="#ec4899" stroke-width="2" />
+                                <text x="282" y="184" fill="#ec4899" font-family="'Outfit', sans-serif" font-size="11">Classifier</text>
+                            </svg>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">Machine Learning & NLP</span>
+                            <h3 class="project-card-title">Email Spam Detection</h3>
+                            <p class="project-desc">
+                                A high-accuracy spam classification system designed using Python and the NLTK library. Implemented custom preprocessing scripts (stemming and lemmatization) and deployed the model on Heroku.
+                            </p>
+                            <div class="project-links">
+                                <a href="https://github.com/Mahaboob1115" target="_blank" class="project-link" aria-label="View Spam Detection Source"><i class="fab fa-github"></i> Source</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Blockchain Real Estate Security -->
+                    <div class="project-card glass-card" data-category="blockchain">
+                        <div class="project-img-wrapper">
+                            <svg class="project-svg" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="pGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#ec4899" />
+                                        <stop offset="100%" stop-color="#f59e0b" />
+                                    </linearGradient>
+                                </defs>
+                                <rect width="400" height="250" fill="url(#pGrad2)" />
+                                <rect x="20" y="20" width="360" height="210" rx="8" fill="#0f172a" opacity="0.9" />
+                                
+                                <!-- Blockchain nodes illustration -->
+                                <g transform="translate(60, 40)">
+                                    <rect x="0" y="0" width="70" height="50" rx="6" fill="#1e293b" stroke="#eab308" stroke-width="2" />
+                                    <text x="12" y="30" fill="#eab308" font-family="'Outfit', sans-serif" font-size="12">Block N-1</text>
+                                    <line x1="70" y1="25" x2="110" y2="25" stroke="#f59e0b" stroke-width="2" stroke-dasharray="4 4" />
+                                    
+                                    <rect x="110" y="0" width="70" height="50" rx="6" fill="#1e293b" stroke="#ec4899" stroke-width="2" />
+                                    <text x="20" y="30" fill="#ec4899" font-family="'Outfit', sans-serif" font-size="12">Block N</text>
+                                    <line x1="180" y1="25" x2="220" y2="25" stroke="#ec4899" stroke-width="2" stroke-dasharray="4 4" />
+                                    
+                                    <rect x="220" y="0" width="70" height="50" rx="6" fill="#1e293b" stroke="#06b6d4" stroke-width="2" />
+                                    <text x="232" y="30" fill="#06b6d4" font-family="'Outfit', sans-serif" font-size="12">Block N+1</text>
+                                </g>
+                                
+                                <!-- Secure Database representation -->
+                                <g transform="translate(60, 130)">
+                                    <rect x="0" y="0" width="280" height="70" rx="8" fill="#1e293b" />
+                                    <circle cx="40" cy="35" r="20" fill="none" stroke="#10b981" stroke-width="2" />
+                                    <path d="M35 38 L40 43 L48 32" fill="none" stroke="#10b981" stroke-width="2" />
+                                    <text x="80" y="32" fill="#f3f4f6" font-family="'Outfit', sans-serif" font-weight="bold" font-size="12">Real Estate Registry Sec</text>
+                                    <text x="80" y="48" fill="#94a3b8" font-family="'Outfit', sans-serif" font-size="10">Decentralized Trust Verification</text>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">Blockchain Security</span>
+                            <h3 class="project-card-title">Real Estate Database Security</h3>
+                            <p class="project-desc">
+                                Architected a secure digital identity verification system utilizing Blockchain technology. Implemented a distributed database structure for enhanced safety, automated loan processing, and synchronized real estate transaction records across nodes.
+                            </p>
+                            <div class="project-links">
+                                <a href="https://github.com/Mahaboob1115" target="_blank" class="project-link" aria-label="View Blockchain Project Source"><i class="fab fa-github"></i> Source</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Video Steganography -->
+                    <div class="project-card glass-card" data-category="cybersecurity">
+                        <div class="project-img-wrapper">
+                            <svg class="project-svg" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="pGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#06b6d4" />
+                                        <stop offset="100%" stop-color="#8b5cf6" />
+                                    </linearGradient>
+                                </defs>
+                                <rect width="400" height="250" fill="url(#pGrad3)" />
+                                <rect x="20" y="20" width="360" height="210" rx="8" fill="#0f172a" opacity="0.9" />
+                                
+                                <!-- Video Frames with Hidden AES Data -->
+                                <rect x="40" y="40" width="140" height="90" rx="6" fill="#1e293b" stroke="#8b5cf6" stroke-width="2" />
+                                <polygon points="90,70 120,85 90,100" fill="#8b5cf6" />
+                                <text x="50" y="120" fill="#94a3b8" font-family="'Outfit', sans-serif" font-size="10">Cover Video Stream</text>
+                                
+                                <g transform="translate(220, 40)">
+                                    <rect x="0" y="0" width="140" height="90" rx="6" fill="#1e293b" stroke="#06b6d4" stroke-width="2" />
+                                    <!-- Embedded payload -->
+                                    <rect x="15" y="15" width="110" height="60" rx="4" fill="#0c0a09" opacity="0.8" />
+                                    <i class="fas fa-lock" x="60" y="40"></i>
+                                    <text x="32" y="32" fill="#06b6d4" font-family="'Outfit', sans-serif" font-size="10" font-weight="bold">AES Encrypted</text>
+                                    <text x="38" y="50" fill="#ffffff" font-family="'Outfit', sans-serif" font-size="9">LSB Embedded</text>
+                                </g>
+                                
+                                <!-- FFmpeg process -->
+                                <rect x="40" y="150" width="320" height="50" rx="6" fill="#1e293b" />
+                                <text x="60" y="180" fill="#e2e8f0" font-family="monospace" font-size="11">ffmpeg -i cover.mp4 -i msg.txt ... output.mp4</text>
+                            </svg>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">Cybersecurity & Cryptography</span>
+                            <h3 class="project-card-title">AES Embedded Video Steganography</h3>
+                            <p class="project-desc">
+                                Developed a secure video steganography system utilizing AES encryption. Implemented data compression and Least Significant Bit (LSB) embedding algorithms. Utilized FFmpeg for advanced video stream processing, maintaining high visual quality.
+                            </p>
+                            <div class="project-links">
+                                <a href="https://github.com/Mahaboob1115" target="_blank" class="project-link" aria-label="View Steganography Project Source"><i class="fab fa-github"></i> Source</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Resume Section -->
+        <section id="resume" class="resume-section scroll-reveal">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-subtitle">My Resume</span>
+                    <h2 class="section-title">Download My Resume</h2>
+                    <div class="section-underline"></div>
+                </div>
+                <div class="resume-card glass-card">
+                    <div class="resume-left">
+                        <div class="resume-icon-wrap">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <div class="resume-info">
+                            <h3>Mahaboob Basha Pamidi</h3>
+                            <p>Full Stack Developer &amp; CSE Graduate</p>
+                            <div class="resume-highlights">
+                                <span class="resume-badge"><i class="fas fa-graduation-cap"></i> B.Tech CSE – 7.71 CGPA</span>
+                                <span class="resume-badge"><i class="fas fa-award"></i> IBM Hackathon Winner</span>
+                                <span class="resume-badge"><i class="fas fa-code"></i> ReactJS · Spring Boot · Python</span>
+                                <span class="resume-badge"><i class="fas fa-shield-alt"></i> Blockchain · Cybersecurity</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="resume-right">
+                        <a href="https://drive.google.com/file/d/1rBr1MbKknOD1KH_mG2qdbLyM45gTfDZG/view?usp=drive_link" target="_blank" class="btn btn-resume btn-resume-view" id="btn-view-resume">
+                            <i class="fas fa-eye"></i> <span>View Resume</span>
+                        </a>
+                        <a href="https://drive.google.com/uc?export=download&id=1rBr1MbKknOD1KH_mG2qdbLyM45gTfDZG" target="_blank" class="btn btn-primary btn-resume-dl" id="btn-dl-resume">
+                            <i class="fas fa-file-download"></i> <span>Download PDF</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section scroll-reveal">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-subtitle">Get In Touch</span>
+                    <h2 class="section-title">Contact Me</h2>
+                    <div class="section-underline"></div>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-info-card glass-card">
+                        <h3>Contact Information</h3>
+                        <p>
+                            I am open to full-time career opportunities in software engineering and development. Feel free to contact me for collaboration or inquiries.
+                        </p>
+                        <div class="contact-details">
+                            <div class="contact-detail-item">
+                                <div class="detail-icon"><i class="fas fa-envelope"></i></div>
+                                <div class="detail-text">
+                                    <span>Email</span>
+                                    <strong>shaikmahaboob1115@gmail.com</strong>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <div class="detail-icon"><i class="fas fa-phone-alt"></i></div>
+                                <div class="detail-text">
+                                    <span>Phone</span>
+                                    <strong>+91 9390277655</strong>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <div class="detail-icon"><i class="fas fa-map-marker-alt"></i></div>
+                                <div class="detail-text">
+                                    <span>Location</span>
+                                    <strong>Bangalore, Karnataka, India</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://github.com/Mahaboob1115" target="_blank" class="social-icon" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/mahaboob-basha-bbba072ba" target="_blank" class="social-icon" aria-label="LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="mailto:shaikmahaboob1115@gmail.com" class="social-icon" aria-label="Email Me"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-card glass-card">
+                        <h3>Send A Message</h3>
+                        <form id="contact-form" novalidate>
+                            <div class="form-group">
+                                <input type="text" id="form-name" required placeholder=" ">
+                                <label for="form-name">Your Name</label>
+                                <span class="input-focus-line"></span>
+                                <span class="error-msg" id="name-error">Please enter your name</span>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="form-email" required placeholder=" ">
+                                <label for="form-email">Your Email</label>
+                                <span class="input-focus-line"></span>
+                                <span class="error-msg" id="email-error">Please enter a valid email address</span>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="form-subject" placeholder=" ">
+                                <label for="form-subject">Subject</label>
+                                <span class="input-focus-line"></span>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="form-message" required placeholder=" " rows="5"></textarea>
+                                <label for="form-message">Your Message</label>
+                                <span class="input-focus-line"></span>
+                                <span class="error-msg" id="message-error">Please enter your message</span>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-submit" id="btn-submit">
+                                <span>Send Message</span> <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="copyright">&copy; 2026 Mahaboob Basha Pamidi. Built with HTML, CSS, and Vanilla JS. All Rights Reserved.</p>
+            <a href="#home" class="scroll-to-top" id="scroll-to-top" aria-label="Scroll to top of page">
+                <i class="fas fa-chevron-up"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Form Submission Success Popup -->
+    <div class="popup-notification" id="popup-notification">
+        <div class="popup-content">
+            <div class="popup-icon"><i class="fas fa-check"></i></div>
+            <h3>Message Sent!</h3>
+            <p>Thank you for reaching out. I will get back to you within 24 hours.</p>
+            <button class="btn btn-primary" id="popup-close-btn">Close</button>
+        </div>
+    </div>
+
+    <!-- Script File -->
+    <script src="script.js"></script>
+</body>
+</html>
