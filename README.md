@@ -1,16 +1,15 @@
 ﻿# Mahaboob Basha Pamidi Portfolio
 
-A personal portfolio website built with HTML, CSS, and JavaScript. It features a dark/light theme toggle, responsive navigation, animated background particles, section reveal animations, project filtering, and contact form validation.
+A personal portfolio website built with HTML, CSS, and Vanilla JavaScript. It includes dark/light theme switching, responsive navigation, animated background particles, section reveal animations, project filtering, and contact form validation.
 
 ## Features
 
 - Dark / Light theme switching with persisted user preference
-- Responsive mobile navigation menu
-- Animated particle background and linkable page sections
-- Typing hero banner animation
-- Scroll reveal and active section highlight
-- Project cards with category filtering
-- Contact form validation and success popup
+- Responsive mobile navigation and mobile menu
+- Animated hero typing effect and scroll reveal animations
+- Particle-based interactive animated background
+- Project filtering by category
+- Contact form validation with success popup
 
 ## Run Locally
 
@@ -28,6 +27,19 @@ python -m http.server 8000
 http://localhost:8000
 ```
 
+## Git Commands
+
+Use these commands to initialize, commit, and push this project:
+
+```bash
+git init
+git add .
+git commit -m "Add portfolio files"
+git branch -M main
+git remote add origin https://github.com/Mahaboob1115/Portfolio.git
+git push -u origin main
+```
+
 ## Folder Structure
 
 - `index.html` — main page markup
@@ -35,7 +47,11 @@ http://localhost:8000
 - `script.js` — interactive site behavior
 - `vercel.json` — deployment configuration for Vercel
 
+## Deployment
+
+This repository includes `vercel.json` for easy deployment on Vercel. Connect the GitHub repository to Vercel to publish the site.
+
 ## Notes
 
-- The project currently does not include a Git repository in this folder.
-- The hero profile image is rendered as a placeholder to avoid broken local asset references.
+- The portfolio website is built as a static HTML/CSS/JS project.
+- The hero profile image currently uses a styled placeholder to avoid broken local asset references.
